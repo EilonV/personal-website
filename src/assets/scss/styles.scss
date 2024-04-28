@@ -1,0 +1,19 @@
+// SETUP
+@import 'setup/_variables.scss';
+@import 'setup/_mixins.scss';
+@import 'setup/_fonts.scss';
+
+// BASICS
+@import 'basics/_base';
+@import 'basics/_layout';
+@import 'basics/_helpers';
+
+// CMPS
+@import 'components/_about.scss';
+@import 'components/_projects.scss';
+@import 'components/_contact.scss';
+
+// PAGES
+@import 'views/_home.scss';
+
+// PACKAGES

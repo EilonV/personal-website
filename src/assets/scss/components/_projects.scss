@@ -1,0 +1,34 @@
+.projects {
+    position: relative;
+    display: flex;
+    margin-left: $gap-large;
+
+    h2 {
+        writing-mode: vertical-rl;
+        position: static;
+        background-color: $mustard;
+        color: $black;
+        height: 100%;
+        padding: 20px 70px 0 70px;
+        font-family: Chillax-Bold;
+        font-size: $h1;
+        text-align: center;
+    }
+
+    .grid {
+        // width: 100%;
+        // height: 100%;
+        // background-color: $lavender;
+        display: flex;
+
+        .project {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 50%;
+            padding: $pad;
+            aspect-ratio: 1/1;
+            border: 2px $mustard solid;
+        }
+    }
+}

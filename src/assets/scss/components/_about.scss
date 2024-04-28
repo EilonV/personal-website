@@ -1,0 +1,81 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // background-color: rgba(250, 235, 215, 0.261);
+    min-width: 80vw;
+    align-items: center;
+    margin-left: $gap-large;
+
+    .top-row {
+        display: flex;
+        gap: $gap-large;
+        // width: 100%;
+
+        .img {
+            // width: 400px;
+            // height: 500px;
+            aspect-ratio: 1/1;
+            max-width: 800px;
+            max-height: 800px;
+            width: 100%;
+            background-color: $mustard;
+            border-radius: 50%;
+        }
+
+        .title {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            text-wrap: nowrap;
+            height: 100%;
+            justify-content: space-around;
+            // width: min-content;
+            // width: fit-content !important;
+            padding: $pad;
+
+            h1 {
+                width: max-content;
+                width: 100%;
+                text-align: center;
+                letter-spacing: $small ;
+            }
+
+            h2 {
+                width: 100%;
+                letter-spacing: $smaller ;
+                color: $lavender;
+            }
+
+            p {
+                width: 100%;
+                text-wrap: wrap;
+            }
+        }
+
+        .education {
+            font-size: $small;
+            margin: 10px 0;
+            color: $lavender;
+            font-family: Chillax-light;
+            font-weight: 700;
+        }
+    }
+
+    ul {
+        width: fit-content;
+        display: flex;
+        gap: $gap;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: $margin;
+
+        li {
+            border: 2px $lavender solid;
+            padding: $btn-pad;
+            border-radius: 20px;
+        }
+    }
+
+}
