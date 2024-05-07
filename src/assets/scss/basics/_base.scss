@@ -88,6 +88,35 @@ ol {
     background: $white;
 }
 
+input,
+textarea,
+button {
+    all: unset;
+    border: 5px $lavender solid;
+    border-radius: $br;
+    padding: $btn-pad;
+    transition: 0.2s;
+}
+
+input,
+textarea {
+    background: linear-gradient(145deg, #7e7abe, #9690e2);
+
+    &:focus {
+        box-shadow: inset 20px 20px 60px #565381,
+            inset -20px -20px 60px #a19bf3;
+    }
+}
+
+button {
+    background: linear-gradient(145deg, #e6cc40, #fff34c);
+
+    &:active {
+        box-shadow: inset 30px 30px 80px #b09e34,
+            inset -5px -5px 20px #ffff52;
+    }
+}
+
 a {
     text-decoration: none;
     background-color: $mustard;
@@ -103,7 +132,7 @@ a {
     display: flex;
     overflow: hidden;
 
-    &:hover {
+    &:hover:not(.way a) {
         &::after {
             width: 100%;
             content: 'visit ➡';
@@ -114,7 +143,7 @@ a {
         }
     }
 
-    &::after {
+    &::after:not(.way a) {
         display: flex;
         align-items: center;
         justify-content: center;

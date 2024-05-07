@@ -8,7 +8,7 @@ export const Home = () => {
         <div className="wrapper">
             <About />
             <Projects />
-            {/* <Contact /> */}
+            <Contact />
         </div>
     </section>
 }

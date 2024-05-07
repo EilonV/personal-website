@@ -2,6 +2,7 @@
     position: relative;
     display: flex;
     margin-left: $gap-large;
+    min-width: max-content;
 
     h2 {
         writing-mode: vertical-rl;
@@ -16,9 +17,6 @@
     }
 
     .grid {
-        // width: 100%;
-        // height: 100%;
-        // background-color: $lavender;
         display: flex;
 
         .project-wrapper {
@@ -33,9 +31,69 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
+                transition: 0.3s;
+
+                &:hover {
+                    .info p {
+                        opacity: 1;
+                        display: block;
+                    }
+                }
 
                 .info {
-                    // background: linear-gradient(180deg, rgba(32, 32, 35, 1) 20%, rgba(255, 255, 255, 0) 100%);
+                    // background-color: rgba(0, 0, 0, 0.603);
+                    position: relative;
+
+                    h3 {
+                        width: 100%;
+                        background-color: $mustard;
+                        color: $black;
+                        padding: $pad;
+
+                    }
+
+                    p {
+                        transition: 0.3s;
+                        font-size: $small;
+                        padding: $pad;
+                        opacity: 0;
+                        background-color: $black-trans;
+                    }
+                }
+
+                &.first {
+                    background-image: url('../../images/gaya.png');
+                    background-size: 150% 100%;
+                }
+
+                &.second {
+                    background-image: url('../../images/shay.png');
+                    background-size: 150% 100%;
+                    background-position: 70%;
+                }
+
+                &.third {
+                    background-image: url('../../images/anime.png');
+                    background-size: 170% 100%;
+                    background-position: 60%;
+                }
+
+                &.fourth {
+                    background-image: url('../../images/texture.png');
+                    background-size: cover;
+                    background-position: center;
+                }
+
+                &.fifth {
+                    background-image: url('../../images/color.png');
+                    background-size: 140% 120%;
+                    background-position: 0% -10%;
+                }
+
+                &.sixth {
+                    background-image: url('../../images/chinese.png');
+                    background-size: cover;
+                    background-position: center;
                 }
             }
         }

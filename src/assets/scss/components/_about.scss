@@ -10,29 +10,33 @@
     .top-row {
         display: flex;
         gap: $gap-large;
-        // width: 100%;
+        width: 100%;
 
         .img {
             // width: 400px;
             // height: 500px;
+            align-self: center;
             aspect-ratio: 1/1;
-            max-width: 800px;
-            max-height: 800px;
+            max-width: 600px;
+            max-height: 600px;
             width: 100%;
             background-color: $mustard;
             border-radius: 50%;
+            display: flex;
         }
 
         .title {
             display: flex;
             flex-direction: column;
             text-align: center;
-            text-wrap: nowrap;
+            // text-wrap: nowrap;
+            // width: 100%;
             height: 100%;
             justify-content: space-around;
             // width: min-content;
             // width: fit-content !important;
             padding: $pad;
+            flex-wrap: wrap;
 
             h1 {
                 width: max-content;
