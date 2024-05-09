@@ -1,0 +1,79 @@
+.resume {
+    // width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    h2 {
+        background-color: $white;
+        color: $lavender;
+        font-size: $h1;
+        padding: 50px 250px;
+        font-family: Chillax-Bold;
+        font-size: $h1;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+
+    .top {
+        padding: $pad * 5;
+    }
+
+    .bottom {
+        padding: $pad * 5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: $gap;
+        a {
+            padding: $pad;
+            font-size: $h3;
+        }
+
+        :first-child,
+        :last-child {
+
+            &:hover {
+                &::after {
+                    width: 100%;
+                    content: 'Download';
+                    text-align: center;
+                    color: $white;
+                    font-size: $small;
+                    font-size: $h3;
+                }
+            }
+
+            &::after {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: 0.2s;
+                content: '';
+                background-color: $lavender;
+                width: 0%;
+                height: 100%;
+                position: absolute;
+                top: 0%;
+                left: 0;
+
+            }
+        }
+
+        :last-child {
+            &:hover {
+                &::after {
+                    content: 'View';
+                }
+            }
+        }
+    }
+
+}

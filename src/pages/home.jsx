@@ -1,6 +1,7 @@
 import { About } from "../components/about";
 import { Projects } from "../components/projects";
 import { Contact } from "../components/contact";
+import { Resume } from "../components/resume";
 
 export const Home = () => {
 
@@ -8,6 +9,7 @@ export const Home = () => {
         <div className="wrapper">
             <About />
             <Projects />
+            <Resume />
             <Contact />
         </div>
     </section>
