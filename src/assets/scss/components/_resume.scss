@@ -3,11 +3,12 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
     h2 {
         background-color: $white;
         color: $lavender;
         font-size: $h1;
-        padding: 50px 250px;
+        padding: 50px 350px;
         font-family: Chillax-Bold;
         font-size: $h1;
     }
@@ -32,6 +33,7 @@
         flex-direction: column;
         align-items: center;
         gap: $gap;
+
         a {
             padding: $pad;
             font-size: $h3;
