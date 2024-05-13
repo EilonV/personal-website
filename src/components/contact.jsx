@@ -1,4 +1,16 @@
 export const Contact = () => {
+
+    const handleInputs = (e) => {
+        e.preventDefault()
+        const sub = e.target[0].value
+        const body = e.target[1].value
+        openDefaultEmailClient(sub, body)
+    }
+    const openDefaultEmailClient = (subject, body) => {
+        const mailtoUrl = `mailto:nttbms@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        window.location.href = mailtoUrl;
+    }
+
     return <section className="contact-wrapper section">
         <div className="contact">
             <div className="contact-ways">
@@ -33,7 +45,7 @@ export const Contact = () => {
                     </div>
                 </a>
             </div>
-            <form action="email" target="noopener" className="flex">
+            <form action="email" target="noopener" className="flex" onSubmit={handleInputs}>
                 <div className="inputs flex column">
                     <input type="text" placeholder="Email title" />
                     <textarea name="" id="" cols="30" rows="10" placeholder="Email content"></textarea>
