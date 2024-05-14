@@ -46,6 +46,42 @@ h4 {
 
 }
 
+@include for-mobile-layout {
+    h1 {
+        font-size: $h1-mobile;
+        line-height: $h1-mobile;
+
+    }
+
+    h2 {
+        font-size: $h2-mobile;
+        line-height: $h2-mobile;
+
+    }
+
+    h3 {
+        font-size: $h3-mobile;
+        line-height: $h3-mobile;
+
+    }
+
+    h4 {
+        font-size: $h4-mobile;
+        line-height: $h4-mobile;
+    }
+
+    p,
+    a,
+    label {
+        font-size: $p-mobile;
+    }
+
+    a {
+        font-size: $small-mobile !important;
+    }
+
+}
+
 p,
 h1,
 h2,

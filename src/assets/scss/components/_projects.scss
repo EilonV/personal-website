@@ -4,6 +4,12 @@
     margin-left: $gap-large;
     min-width: max-content;
 
+    @include for-mobile-layout {
+        min-width: 0;
+        margin-left: 0;
+        flex-direction: column;
+    }
+
     h2 {
         writing-mode: vertical-rl;
         position: static;
@@ -14,10 +20,20 @@
         font-family: Chillax-Bold;
         font-size: $h1;
         text-align: center;
+
+        @include for-mobile-layout {
+            writing-mode: horizontal-tb;
+            font-size: $h1-mobile;
+            padding: $pad;
+        }
     }
 
     .grid {
         display: flex;
+
+        @include for-mobile-layout {
+            flex-direction: column;
+        }
 
         .project-wrapper {
             width: 100%;

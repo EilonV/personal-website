@@ -74,21 +74,6 @@
 
             @include for-mobile-layout {
                 padding: 0;
-
-                h1 {
-                    font-size: $h1-mobile;
-                    line-height: $h1-mobile ;
-                }
-
-                h2 {
-                    font-size: $h2-mobile;
-                    line-height: $h2-mobile ;
-                }
-
-                p {
-                    font-size: $p-mobile;
-                }
-
             }
         }
 
