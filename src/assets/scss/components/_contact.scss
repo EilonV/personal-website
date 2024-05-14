@@ -1,11 +1,8 @@
 .contact-wrapper {
 
     .contact {
-        // min-width: 600px;
         display: flex;
         flex-direction: column;
-        // min-width: 800px;
-        // width: 100%;
         height: 100%;
         justify-content: space-between;
 
@@ -30,6 +27,15 @@
                 font-family: Chillax-regular;
                 box-shadow: 5px 5px 1px #1d1d20,
                     -5px -5px 1px #232326;
+
+                @include for-mobile-layout {
+
+                    &::after {
+                        content: "" !important;
+                    }
+
+                }
+
 
                 &:nth-child(1) {
                     &::after {
@@ -69,6 +75,8 @@
                     transition: 0.2s;
                     color: $black;
                     font-weight: 700;
+
+
                 }
 
                 .way-content {
@@ -85,6 +93,10 @@
                         color: $black;
                         font-weight: 700;
                         font-size: $small;
+
+                        @include for-mobile-layout {
+                            display: none;
+                        }
                     }
                 }
 
@@ -127,13 +139,23 @@
             font-family: Chillax-Bold;
             font-size: $h1;
             text-align: center;
+
+            @include for-mobile-layout {
+                padding: $pad;
+                font-size: $h1-mobile;
+                text-align: center;
+            }
         }
 
         form {
             width: 100%;
-
             padding: 0 $pad $pad $pad ;
             gap: $gap;
+
+            @include for-mobile-layout {
+                flex-direction: column;
+                padding: 0 0 10px 0;
+            }
 
             .inputs {
                 width: 100%;
@@ -143,7 +165,6 @@
                     background-color: $lavender;
                     color: $black;
                     font-family: Chillax-semibold;
-                    // font-size: 30px;
 
                     &::placeholder {
                         color: $black;
@@ -167,6 +188,19 @@
                 background-color: $mustard;
                 border-color: $mustard;
                 color: $black;
+
+                @include for-mobile-layout {
+                    all: unset;
+                    width: 100%;
+                    cursor: pointer;
+                    text-align: center;
+                    font-family: Chillax-semibold;
+                    font-size: $small;
+                    background-color: $mustard;
+                    border-color: $mustard;
+                    color: $black;
+                    padding: $pad 0;
+                }
             }
 
 
