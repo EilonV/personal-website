@@ -12,7 +12,7 @@ export const About = () => {
                     <p className="education">Coding Academy 2022</p>
                 </div>
                 <p>
-                    Hey there! I'm Eilon, a {age} year-old Front-end Developer with a passion for
+                    Hey there! I'm Eilon, a {age} year-old Front-end developer with a passion for
                     coding, designing,
                     and all things art-related.
                     Looking for my first position as a Front-end developer,

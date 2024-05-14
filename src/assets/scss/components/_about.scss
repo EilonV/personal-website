@@ -7,10 +7,20 @@
     align-items: center;
     margin-left: $gap-large;
 
+    @include for-mobile-layout {
+        margin-left: 0;
+    }
+
     .top-row {
         display: flex;
         gap: $gap-large;
         width: 100%;
+        padding: $pad;
+
+        @include for-mobile-layout {
+            flex-direction: column;
+            gap: $gap;
+        }
 
         .img {
             // width: 400px;
@@ -38,6 +48,11 @@
             padding: $pad;
             flex-wrap: wrap;
 
+            div {
+                width: 100%;
+            }
+
+
             h1 {
                 width: max-content;
                 width: 100%;
@@ -49,11 +64,31 @@
                 width: 100%;
                 letter-spacing: $smaller ;
                 color: $lavender;
+                word-wrap: break-word;
             }
 
             p {
                 width: 100%;
                 text-wrap: wrap;
+            }
+
+            @include for-mobile-layout {
+                padding: 0;
+
+                h1 {
+                    font-size: $h1-mobile;
+                    line-height: $h1-mobile ;
+                }
+
+                h2 {
+                    font-size: $h2-mobile;
+                    line-height: $h2-mobile ;
+                }
+
+                p {
+                    font-size: $p-mobile;
+                }
+
             }
         }
 
