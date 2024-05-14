@@ -11,6 +11,12 @@
         padding: 50px 350px;
         font-family: Chillax-Bold;
         font-size: $h1;
+
+        @include for-mobile-layout {
+            padding: $pad;
+            font-size: $h1-mobile;
+            text-align: center;
+        }
     }
 
     .content {
@@ -25,6 +31,10 @@
 
     .top {
         padding: $pad * 5;
+
+        @include for-mobile-layout {
+            padding: $pad-large;
+        }
     }
 
     .bottom {
@@ -33,6 +43,10 @@
         flex-direction: column;
         align-items: center;
         gap: $gap;
+
+        @include for-mobile-layout {
+            padding: $pad-large;
+        }
 
         a {
             padding: $pad;
