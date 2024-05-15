@@ -140,6 +140,12 @@
             font-size: $h1;
             text-align: center;
 
+            @include for-wider-layout {
+                padding: 50px;
+                font-size: $h1-tablet;
+                text-align: center;
+            }
+
             @include for-mobile-layout {
                 padding: $pad;
                 font-size: $h1-mobile;

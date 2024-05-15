@@ -12,6 +12,11 @@
         font-family: Chillax-Bold;
         font-size: $h1;
 
+        @include for-wider-layout {
+            font-size: $h1-tablet;
+            padding: 50px 50px;
+        }
+
         @include for-mobile-layout {
             padding: $pad;
             font-size: $h1-mobile;
@@ -31,6 +36,12 @@
 
     .top {
         padding: $pad * 5;
+
+        p {
+            @include for-wider-layout {
+                font-size: $p-tablet;
+            }
+        }
 
         @include for-mobile-layout {
             padding: $pad-large;

@@ -1,10 +1,11 @@
+import me from '../assets/images/me-compressed.jpg'
+
 export const About = () => {
     const age = Math.floor((Date.now() - Date.parse('26 oct 1995')) / (1000 * 60 * 60 * 24 * 365));
 
     return <section className="about section">
         <div className="top-row">
-            {/* <img src="/" alt="" /> */}
-            <p className="img"></p>
+            <img src={me} alt="" className="img" draggable="false" />
             <div className="title">
                 <div>
                     <h1>Eilon Vana</h1>
