@@ -51,7 +51,7 @@
 
                 &:nth-child(3) {
                     &::after {
-                        content: "nttbms@gmail.com";
+                        content: "contact@eilonvana.dev";
                     }
                 }
 
@@ -75,8 +75,8 @@
                     transition: 0.2s;
                     color: $black;
                     font-weight: 700;
-
-
+                    word-break: break-all;
+                    text-align: center;
                 }
 
                 .way-content {

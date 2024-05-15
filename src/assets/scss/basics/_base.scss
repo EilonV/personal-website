@@ -178,18 +178,17 @@ a {
     display: flex;
     overflow: hidden;
 
-    &:hover:not(.way a) {
+    &:hover {
         &::after {
             width: 100%;
             content: 'visit ➡';
             text-align: center;
             color: $white;
             font-size: $small;
-
         }
     }
 
-    &::after:not(.way a) {
+    &::after {
         display: flex;
         align-items: center;
         justify-content: center;

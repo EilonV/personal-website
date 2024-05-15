@@ -7,7 +7,7 @@ export const Contact = () => {
         openDefaultEmailClient(sub, body)
     }
     const openDefaultEmailClient = (subject, body) => {
-        const mailtoUrl = `mailto:nttbms@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        const mailtoUrl = `mailto:contact@eilonvana.dev?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
         window.location.href = mailtoUrl;
     }
 
@@ -26,7 +26,7 @@ export const Contact = () => {
                         <p>Linkedin</p>
                     </div>
                 </a>
-                <a href="mailto:nttbms@gmail.com" target="noopener" className="way">
+                <a href="mailto:contact@eilonvana.dev" target="noopener" className="way">
                     <div className="way-content">
                         <i className="fa-regular fa-envelope"></i>
                         <p>Email</p>

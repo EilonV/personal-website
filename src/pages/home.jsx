@@ -6,6 +6,7 @@ import { Resume } from "../components/resume";
 export const Home = () => {
 
     return <section className="home outer-wrapper">
+        <span className="back"></span>
         <div className="wrapper">
             <About />
             <Projects />
