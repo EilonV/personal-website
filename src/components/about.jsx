@@ -1,4 +1,4 @@
-import me from '../assets/images/me-compressed.jpg'
+import me from '../assets/images/me-compress.png'
 
 export const About = () => {
     const age = Math.floor((Date.now() - Date.parse('26 oct 1995')) / (1000 * 60 * 60 * 24 * 365));
